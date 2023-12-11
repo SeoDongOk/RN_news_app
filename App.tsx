@@ -17,6 +17,7 @@ import {
 import Home from './src/Home';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import Buttom from './src/components/Buttom';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,6 +25,7 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  console.log('backgroundStyle: ', isDarkMode);
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -31,8 +33,13 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <View>
+      <View style={styles.sectionContainer}>
         <Home />
+        <View>
+          <Text>current mode </Text>
+          <Text style={styles.sectionTitle}>Button Here</Text>
+          <Buttom />
+        </View>
       </View>
     </SafeAreaView>
   );
