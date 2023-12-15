@@ -5,7 +5,12 @@ export class Memo extends Component {
   render() {
     return (
       <View style={styles.textBox}>
-        <TextInput style={styles.textInput} />
+        <TextInput
+          style={styles.textInput}
+          onChange={(e: string) => {
+            console.log(e);
+          }}
+        />
       </View>
     );
   }
@@ -16,7 +21,8 @@ const styles = StyleSheet.create({
   textBox: {
     margin: 'auto',
     backgroundColor: '#ff00ff',
-    marginTop: 100,
+    // marginTop: 100,
+    padding: 10,
     marginBottom: 'auto',
   },
 });
