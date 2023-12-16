@@ -1,29 +1,30 @@
-import {StyleSheet, TextInput, View} from 'react-native';
-import React, {Component} from 'react';
+import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
+import React, {useState} from 'react';
 
-export class Memo extends Component {
-  render() {
-    return (
+function Memo() {
+  const [txt, setTxt] = useState<string>('demo');
+
+  return (
+    <View style={styles.textBox}>
       <View style={styles.textBox}>
         <TextInput
-          style={styles.textInput}
-          onChange={(e: string) => {
-            console.log(e);
+          style={{backgroundColor: 'skyblue', paddingLeft: 10}}
+          onChangeText={(e: string) => {
+            setTxt(e);
           }}
         />
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   textInput: {},
   textBox: {
-    margin: 'auto',
-    backgroundColor: '#ff00ff',
-    // marginTop: 100,
     padding: 10,
-    marginBottom: 'auto',
+    borderBottomColor: '#ddd',
+    borderBottomWidth: 1,
+    flexDirection: 'row',
   },
 });
 
