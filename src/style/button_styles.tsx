@@ -14,8 +14,8 @@ const ButtonVeryLarge = () => {
 const ButtonLarge = () => {
   return (
     <View style={styles.buttonLarge_Box}>
-      <TouchableOpacity style={styles.buttonLarge}>
-        <Text>Button Style Large</Text>
+      <TouchableOpacity>
+        <Text style={styles.buttonLarge}>Button Style Large</Text>
       </TouchableOpacity>
     </View>
   );
@@ -24,8 +24,8 @@ const ButtonLarge = () => {
 const ButtonMiddle = () => {
   return (
     <View style={styles.buttonMiddle_Box}>
-      <TouchableOpacity style={styles.buttonMiddle}>
-        <Text>Button Style Middle</Text>
+      <TouchableOpacity>
+        <Text style={styles.buttonMiddle}>Button Style Middle</Text>
       </TouchableOpacity>
     </View>
   );
@@ -34,8 +34,8 @@ const ButtonMiddle = () => {
 const ButtonSmall = () => {
   return (
     <View style={styles.buttonSmall_Box}>
-      <TouchableOpacity style={styles.buttonSmall}>
-        <Text>Button Style Small</Text>
+      <TouchableOpacity>
+        <Text style={styles.buttonSmall}>Button Style Small</Text>
       </TouchableOpacity>
     </View>
   );
@@ -44,8 +44,8 @@ const ButtonSmall = () => {
 const ButtonVerySmall = () => {
   return (
     <View style={styles.buttonVerySmall_Box}>
-      <TouchableOpacity style={styles.buttonVerySmall}>
-        <Text>Button Style Very Small</Text>
+      <TouchableOpacity>
+        <Text style={styles.buttonVerySmall}>Button Style Very Small</Text>
       </TouchableOpacity>
     </View>
   );
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
   buttonVeryLarge: {
     textAlign: 'center',
     fontSize: 30,
+    fontFamily: '',
   },
   buttonLarge: {},
   buttonMiddle: {},

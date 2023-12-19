@@ -4,11 +4,13 @@ import React, {Component} from 'react';
 export default class Home extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.home}>
         <Text>Home</Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  home: {},
+});
