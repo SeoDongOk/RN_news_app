@@ -19,6 +19,7 @@ import Home from './src/Home';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Buttom from './src/components/Buttom';
 import Memo from './src/components/Memo';
+import {ButtonVeryLarge} from './src/style/button_styles';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -41,6 +42,7 @@ function App(): React.JSX.Element {
           <Text>Todo List</Text>
           <Memo />
           <Text style={styles.sectionTitle}>Button Here</Text>
+          <ButtonVeryLarge />
           <Buttom />
         </View>
       </View>

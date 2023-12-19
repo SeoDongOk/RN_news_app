@@ -1,17 +1,17 @@
 import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const buttonVeryLarge = () => {
+const ButtonVeryLarge = () => {
   return (
     <View style={styles.buttonVeryLarge_Box}>
-      <TouchableOpacity style={styles.buttonVeryLarge}>
-        <Text>Button Style Very Large</Text>
+      <TouchableOpacity>
+        <Text style={styles.buttonVeryLarge}>Button Style Very Large</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-const buttonLarge = () => {
+const ButtonLarge = () => {
   return (
     <View style={styles.buttonLarge_Box}>
       <TouchableOpacity style={styles.buttonLarge}>
@@ -21,7 +21,7 @@ const buttonLarge = () => {
   );
 };
 
-const buttonMiddle = () => {
+const ButtonMiddle = () => {
   return (
     <View style={styles.buttonMiddle_Box}>
       <TouchableOpacity style={styles.buttonMiddle}>
@@ -31,7 +31,7 @@ const buttonMiddle = () => {
   );
 };
 
-const buttonSmall = () => {
+const ButtonSmall = () => {
   return (
     <View style={styles.buttonSmall_Box}>
       <TouchableOpacity style={styles.buttonSmall}>
@@ -41,7 +41,7 @@ const buttonSmall = () => {
   );
 };
 
-const buttonVerySmall = () => {
+const ButtonVerySmall = () => {
   return (
     <View style={styles.buttonVerySmall_Box}>
       <TouchableOpacity style={styles.buttonVerySmall}>
@@ -52,12 +52,20 @@ const buttonVerySmall = () => {
 };
 
 const styles = StyleSheet.create({
-  buttonVeryLarge_Box: {},
+  buttonVeryLarge_Box: {
+    backgroundColor: '#0064FF',
+    padding: 30,
+    margin: 'auto',
+    borderRadius: 40,
+  },
   buttonLarge_Box: {},
   buttonMiddle_Box: {},
   buttonSmall_Box: {},
   buttonVerySmall_Box: {},
-  buttonVeryLarge: {},
+  buttonVeryLarge: {
+    textAlign: 'center',
+    fontSize: 30,
+  },
   buttonLarge: {},
   buttonMiddle: {},
   buttonSmall: {},
@@ -65,9 +73,9 @@ const styles = StyleSheet.create({
 });
 
 export {
-  buttonVeryLarge,
-  buttonLarge,
-  buttonMiddle,
-  buttonSmall,
-  buttonVerySmall,
+  ButtonVeryLarge,
+  ButtonLarge,
+  ButtonMiddle,
+  ButtonSmall,
+  ButtonVerySmall,
 };
