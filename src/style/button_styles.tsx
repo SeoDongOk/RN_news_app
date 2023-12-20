@@ -3,51 +3,51 @@ import React from 'react';
 
 const ButtonVeryLarge = () => {
   return (
-    <View style={styles.buttonVeryLarge_Box}>
-      <TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.buttonVeryLarge_Box}>
         <Text style={styles.buttonVeryLarge}>Button Style Very Large</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const ButtonLarge = () => {
   return (
-    <View style={styles.buttonLarge_Box}>
-      <TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.buttonLarge_Box}>
         <Text style={styles.buttonLarge}>Button Style Large</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const ButtonMiddle = () => {
   return (
-    <View style={styles.buttonMiddle_Box}>
-      <TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.buttonMiddle_Box}>
         <Text style={styles.buttonMiddle}>Button Style Middle</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const ButtonSmall = () => {
   return (
-    <View style={styles.buttonSmall_Box}>
-      <TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.buttonSmall_Box}>
         <Text style={styles.buttonSmall}>Button Style Small</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
 const ButtonVerySmall = () => {
   return (
-    <View style={styles.buttonVerySmall_Box}>
-      <TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.buttonVerySmall_Box}>
         <Text style={styles.buttonVerySmall}>Button Style Very Small</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
@@ -58,8 +58,22 @@ const styles = StyleSheet.create({
     margin: 'auto',
     borderRadius: 40,
   },
-  buttonLarge_Box: {},
-  buttonMiddle_Box: {},
+  buttonLarge_Box: {
+    backgroundColor: '#0064FF',
+    padding: 25,
+    marginLeft: 50,
+    marginRight: 50,
+    margin: 'auto',
+    borderRadius: 40,
+  },
+  buttonMiddle_Box: {
+    backgroundColor: '#0064FF',
+    padding: 20,
+    marginLeft: 110,
+    marginRight: 110,
+    margin: 'auto',
+    borderRadius: 40,
+  },
   buttonSmall_Box: {},
   buttonVerySmall_Box: {},
   buttonVeryLarge: {
@@ -67,8 +81,16 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: '',
   },
-  buttonLarge: {},
-  buttonMiddle: {},
+  buttonLarge: {
+    textAlign: 'center',
+    fontSize: 25,
+    fontFamily: '',
+  },
+  buttonMiddle: {
+    textAlign: 'center',
+    fontSize: 15,
+    fontFamily: '',
+  },
   buttonSmall: {},
   buttonVerySmall: {},
 });
