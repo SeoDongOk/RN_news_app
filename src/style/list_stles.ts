@@ -1,0 +1,3 @@
+const tableSetting = () => {};
+
+export {tableSetting};
