@@ -22,7 +22,9 @@ import Memo from './src/components/Memo';
 import {
   ButtonLarge,
   ButtonMiddle,
+  ButtonSmall,
   ButtonVeryLarge,
+  ButtonVerySmall,
 } from './src/style/button_styles';
 
 function App(): React.JSX.Element {
@@ -51,6 +53,10 @@ function App(): React.JSX.Element {
           <ButtonLarge />
           <Text> Blink </Text>
           <ButtonMiddle />
+          <Text> Blink </Text>
+          <ButtonSmall />
+          <Text> Blink </Text>
+          <ButtonVerySmall />
 
           <Buttom />
         </View>

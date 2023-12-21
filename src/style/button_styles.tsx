@@ -45,7 +45,7 @@ const ButtonVerySmall = () => {
   return (
     <TouchableOpacity>
       <View style={styles.buttonVerySmall_Box}>
-        <Text style={styles.buttonVerySmall}>Button Style Very Small</Text>
+        <Text style={styles.buttonVerySmall}>VS</Text>
       </View>
     </TouchableOpacity>
   );
@@ -74,8 +74,22 @@ const styles = StyleSheet.create({
     margin: 'auto',
     borderRadius: 40,
   },
-  buttonSmall_Box: {},
-  buttonVerySmall_Box: {},
+  buttonSmall_Box: {
+    backgroundColor: '#0064FF',
+    padding: 20,
+    marginLeft: 110,
+    marginRight: 110,
+    margin: 'auto',
+    borderRadius: 40,
+  },
+  buttonVerySmall_Box: {
+    backgroundColor: '#0064FF',
+    padding: 15,
+    marginLeft: 200,
+    marginRight: 200,
+    margin: 'auto',
+    borderRadius: 40,
+  },
   buttonVeryLarge: {
     textAlign: 'center',
     fontSize: 30,
@@ -91,8 +105,16 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontFamily: '',
   },
-  buttonSmall: {},
-  buttonVerySmall: {},
+  buttonSmall: {
+    textAlign: 'center',
+    fontSize: 15,
+    fontFamily: '',
+  },
+  buttonVerySmall: {
+    textAlign: 'center',
+    fontSize: 15,
+    fontFamily: '',
+  },
 });
 
 export {
